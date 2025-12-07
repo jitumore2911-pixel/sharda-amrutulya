@@ -2,195 +2,126 @@
 <html lang="mr">
 <head>
     <meta charset="UTF-8">
-    <title>शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर</title>
+
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans Devanagari", sans-serif;
-            background: #f5f2ff;
-            color: #2b1b3f;
-            line-height: 1.6;
+            font-family: "Noto Sans Devanagari", "Poppins", sans-serif;
+            background: #f3eaff;
+            margin: 0;
+            padding: 0;
+            color: #3b1b4f;
         }
         header {
-            background: linear-gradient(135deg, #5b1f7a, #9b2f8f);
-            color: #fff;
+            background: linear-gradient(135deg, #5e1d8a, #9b3db2);
+            color: white;
             text-align: center;
-            padding: 1.8rem 1rem 2.4rem;
+            padding: 25px 10px;
         }
-        header h1 {
-            font-size: 2.2rem;
-            margin-top: 0.5rem;
+        header h1 { font-size: 32px; margin-bottom: 5px; }
+        .tag { font-size: 14px; margin-bottom: 10px; }
+        .dev { font-size: 16px; margin-top: 5px; }
+
+        main { padding: 20px; max-width: 1000px; margin: auto; }
+
+        .card {
+            background: white;
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
-        header h2 {
-            font-size: 1.2rem;
-            margin-top: 0.6rem;
-        }
-        .dev-names {
-            font-size: 0.95rem;
-            margin-bottom: 0.8rem;
-        }
-        .tagline {
-            font-size: 0.9rem;
-            margin-top: 0.4rem;
-        }
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 1.5rem 1rem 3rem;
-        }
-        section {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 1.3rem 1.3rem 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        section h3 {
-            margin-bottom: 0.6rem;
-            font-size: 1.2rem;
-            color: #5b1f7a;
-        }
-        .two-col {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1rem;
-            align-items: flex-start;
-        }
-        ul { margin-left: 1.2rem; }
-        .highlight {
-            font-weight: 600;
-            color: #9b2f8f;
-        }
-        .address, .contact {
-            font-size: 0.98rem;
-        }
-        .contact a {
-            color: #5b1f7a;
-            text-decoration: none;
-            font-weight: 600;
-        }
+
+        h2 { margin-top: 0; color: #5e1d8a; }
+
+        ul { margin-left: 15px; line-height: 1.8; }
+
         .footer {
             text-align: center;
-            font-size: 0.85rem;
-            color: #777;
-            margin-top: 0.7rem;
-        }
-        .en-title {
-            font-style: italic;
-            font-size: 0.95rem;
-            color: #333;
-        }
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.6rem; }
+            padding: 15px;
+            font-size: 14px;
+            color: #555;
         }
     </style>
+
 </head>
 <body>
 
 <header>
-    <div class="dev-names">
+    <div class="dev">
         || श्री जानाई देवी प्रसन्न || श्री पेटेश्वर प्रसन्न || श्री गावडाई देवी प्रसन्न ||
     </div>
-    <div class="tagline">
+    <div class="tag">
         कास पठारावरील सुप्रसिद्ध गवती चहा मिळण्याचे ठिकाण
     </div>
+
     <h1>शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर</h1>
-    <p class="en-title">Sharada Amrutulya Tea &amp; Snacks Center</p>
+    <div>Sharada Amrutulya Tea & Snacks Center</div>
 </header>
 
 <main>
 
-    <!-- About Section -->
-    <section>
-        <h3>आमच्याबद्दल / About Us</h3>
-        <div class="two-col">
-            <div>
-                <p>
-                    <span class="highlight">शारदा अमृततुल्य</span> येथे कास पठाराच्या थंड हवेत 
-                    ताज्या गवती चहाचा सुगंध आणि गरमागरम स्नॅक्सचा आस्वाद मिळतो.
-                </p>
-                <p>
-                    घरगुती चव, स्वच्छता आणि प्रेमाने बनवलेला चहा – हेच आमचं वैशिष्ट्य.
-                </p>
-            </div>
-            <div>
-                <p><strong>In English:</strong></p>
-                <p>
-                    At <span class="highlight">Sharada Amrutulya</span>, you can enjoy 
-                    refreshing lemongrass tea and hot snacks in the cool breeze of 
-                    the famous Kaas Plateau.
-                </p>
-                <p>
-                    We serve homely taste, hygiene and lots of love in every cup of tea.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section>
-        <h3>मेनू / Menu</h3>
-        <div class="two-col">
-            <div>
-                <ul>
-                    <li>गवती चहा (लिंबू / आलं / मसाला)</li>
-                    <li>कटिंग चहा</li>
-                    <li>दुध चहा</li>
-                    <li>कॉफी</li>
-                    <li>वडापाव, भजी, पकोडे</li>
-                    <li>बिस्कीट, खारी, स्नॅक्स</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Lemongrass Tea (Lemon / Ginger / Masala)</li>
-                    <li>Cutting Tea</li>
-                    <li>Milk Tea</li>
-                    <li>Coffee</li>
-                    <li>Vada Pav, Bhaji, Pakoda</li>
-                    <li>Biscuits, Khari &amp; dry snacks</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Location Section -->
-    <section class="address">
-        <h3>पत्ता / Address</h3>
-        <p>
-            गावडाई देवी वस्ती, पेट्री, पारस हॉटेल शेजारी, कास पठार, सातारा
-        </p>
-        <p>
-            <strong>English:</strong> Gavadayi Devi Vasti, Petri, beside Paras Hotel,
-            Kaas Plateau, Satara, Maharashtra, India.
-        </p>
-    </section>
-
-    <!-- Owner & Contact -->
-    <section class="contact">
-        <h3>मालक / Proprietor</h3>
-        <p>
-            प्रो. पा. श्री किसन सखाराम मोरे  
-            <br><span class="en-title">Pro. Pa. Mr. Kisan Sakharam More</span>
-        </p>
-        <p>
-            📞 Mobile: 
-            <a href="tel:+918652062837">8652062837</a> / 
-            <a href="tel:+918693028680">8693028680</a>
-        </p>
-    </section>
-
-    <p class="footer">
-        © <span id="year"></span> Sharada Amrutulya Tea &amp; Snacks Center – Kaas Plateau, Satara.
+<div class="card">
+    <h2>आमच्याबद्दल / About Us</h2>
+    <p>
+        शारदा अमृततुल्य येथे कास पठाराच्या थंड हवेत ताज्या गवती चहाचा सुगंध आणि गरमागरम स्नॅक्सचा आस्वाद मिळतो.
+        घरगुती चव, स्वच्छता आणि प्रेमाने बनवलेला चहा – हेच आमचं वैशिष्ट्य आहे.
     </p>
+
+    <p><b>In English:</b>  
+        At Sharada Amrutulya, you can enjoy refreshing lemongrass tea and hot snacks in the cool breeze of the famous Kaas Plateau.
+    </p>
+</div>
+
+<div class="card">
+    <h2>मेनू / Menu</h2>
+    <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+
+        <ul>
+            <li>गवती चहा (लिंबू / आलं / मसाला)</li>
+            <li>कटिंग चहा</li>
+            <li>दूध चहा</li>
+            <li>कॉफी</li>
+            <li>वडापाव, भजी, पकोडे</li>
+            <li>बिस्कीट, खारी, स्नॅक्स</li>
+        </ul>
+
+        <ul>
+            <li>Lemongrass Tea (Lemon / Ginger / Masala)</li>
+            <li>Cutting Tea</li>
+            <li>Milk Tea</li>
+            <li>Coffee</li>
+            <li>Vada Pav, Bhaji, Pakoda</li>
+            <li>Biscuits, Khari & Snacks</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="card">
+    <h2>पत्ता / Address</h2>
+    <p>
+        गावडाई देवी वस्ती, पेट्री, पारस हॉटेल शेजारी, कास पठार, सातारा
+    </p>
+    <p>
+        English: Gavadayi Devi Vasti, Petri, beside Paras Hotel, Kaas Plateau, Satara.
+    </p>
+</div>
+
+<div class="card">
+    <h2>मालक / Proprietor</h2>
+    <p>
+        प्रो. पा. श्री किसन सखाराम मोरे  
+        <br>Mobile: 8652062837 / 8693028680
+    </p>
+</div>
 
 </main>
 
-<script>
-    // Current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<div class="footer">
+    © 2025 Sharada Amrutulya Tea & Snacks Center – Kaas Plateau, Satara.
+</div>
 
 </body>
 </html>
