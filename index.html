@@ -157,3 +157,77 @@
             📍 Get Directions
         </a>
     </div>
+    <!-- CONTACT / ENQUIRY FORM -->
+    <div class="card">
+        <h2>संपर्क / Enquiry</h2>
+        <p>ग्रुप ऑर्डर, फॅमिली जेवण किंवा खास कार्यक्रमासाठी खालील फॉर्म भरून WhatsApp वर मेसेज पाठवा.</p>
+
+        <form id="contactForm" onsubmit="sendWhatsApp(event)">
+            <div class="form-group">
+                <label for="name">नाव / Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">मोबाईल नंबर / Mobile</label>
+                <input type="tel" id="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">मेसेज / Message</label>
+                <textarea id="message" placeholder="उदा. 10 जणांसाठी संध्याकाळी 7 वाजता चिकन थाळी ऑर्डर..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whats">
+                🟢 WhatsApp वर मेसेज पाठवा
+            </button>
+        </form>
+    </div>
+
+    <!-- SOCIAL + FOOTER -->
+    <div class="card">
+        <h2>सोशल मीडिया / Social Media</h2>
+        <p>लवकरच आमचे Instagram आणि Facebook पेजेस सुरू होणार आहेत.</p>
+        <div class="social">
+            <a href="#" title="Instagram">I</a>
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="YouTube">▶</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर – कास पठार, सातारा.
+    </div>
+
+</main>
+
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-btn"
+   href="https://wa.me/918652062837?text=Hello%20Sharada%20Amrutulya!%20I%20want%20to%20order."
+   target="_blank">
+   🟢 Order on WhatsApp
+</a>
+
+<!-- WhatsApp Form Script -->
+<script>
+    function sendWhatsApp(event) {
+        event.preventDefault();
+
+        var name = document.getElementById('name').value.trim();
+        var mobile = document.getElementById('mobile').value.trim();
+        var msg = document.getElementById('message').value.trim();
+
+        var fullMsg =
+            "नाव: " + name + "%0A" +
+            "मोबाईल: " + mobile + "%0A" +
+            "मेसेज: " + msg + "%0A%0A" +
+            "Sent from Website - Sharada Amrutulya";
+
+        var url = "https://wa.me/918652062837?text=" + fullMsg;
+        window.open(url, "_blank");
+    }
+</script>
+
+</body>
+</html>
+
