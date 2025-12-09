@@ -13,7 +13,7 @@
     <meta name="keywords" content="शारदा अमृततुल्य, गवती चहा, कास पठार चहा, सातारा tea, snacks center, वडापाव, भजी, चिकन थाळी, Kaas Plateau tea, Satara food">
     <meta name="author" content="Sharada Amrutulya">
 
-    <!-- Social / WhatsApp Preview -->
+    <!-- Social preview image -->
     <meta property="og:title" content="शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर - कास पठार">
     <meta property="og:description" content="कास पठाराच्या थंड हवेत ताज्या गवती चहाचा सुगंध आणि गरमा गरम स्नॅक्सचा आस्वाद. सकाळी 6 ते रात्री 10.">
     <meta property="og:image" content="banner.jpg">
@@ -28,7 +28,7 @@
             color: #3b1b4f;
         }
 
-        /* PREMIUM BANNER HEADER */
+        /* HEADER */
         header {
             background: url('banner.jpg') no-repeat center center/cover;
             height: 330px;
@@ -38,7 +38,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding-bottom: 15px;
+            padding-bottom: 20px;
         }
 
         header::before {
@@ -50,7 +50,7 @@
 
         .header-inner {
             position: relative;
-            z-index: 1;
+            z-index: 2;
         }
 
         header h1 {
@@ -90,144 +90,76 @@
             line-height: 1.8;
         }
 
-    <!-- MENU -->
-    <div class="card">
-        <h2>मेनू / Menu</h2>
-        <ul>
-            <li>गवती चहा (लिंबू / आलं / मसाला)</li>
-            <li>कटिंग चहा, दूध चहा, कॉफी</li>
-            <li>वडापाव, भजी, पकोडे</li>
-            <li>अंडा मॅगी, अंडा भुर्जी</li>
-            <li>मिसळ पाव, उपमा, पोहे</li>
-            <li>चिकन थाळी, मटण थाळी (ऑर्डरनुसार)</li>
-        </ul>
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            object-fit: cover;
+            height: 130px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background: #6e2c91;
+            color: white;
+        }
+        .btn-whats {
+            background: #25D366;
+            color: white;
+        }
+
+        /* Contact form */
+        input, textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-family: inherit;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 18px;
+            right: 18px;
+            background: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <h1>शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर</h1>
+        <p>कास पठारावरील सुप्रसिद्ध गवती चहा मिळण्याचे ठिकाण • सकाळी 6 ते रात्री 10</p>
     </div>
+</header>
 
-    <!-- FOOD GALLERY -->
-    <div class="card">
-        <h2>फूड गॅलरी / Food Gallery</h2>
-
-        <div class="gallery">
-            <img src="gallery1.jpg" alt="Tea & Snacks 1">
-            <img src="gallery2.jpg" alt="Tea & Snacks 2">
-            <img src="gallery22.jpg" alt="Tea & Snacks 3">
-            <img src="gallery235.jpg" alt="Tea & Snacks 4">
-            <img src="gallery4552.jpg" alt="Tea & Snacks 5">
-            <img src="gallery522.jpg" alt="Tea & Snacks 6">
-        </div>
-    </div>
-
-    <!-- DOWNLOAD MENU PDF -->
-    <div class="card">
-        <h2>मेनू कार्ड डाउनलोड / Download Menu</h2>
-        <p>संपूर्ण मेनू, रेट लिस्ट आणि पदार्थांची माहिती PDF मध्ये उपलब्ध आहे.</p>
-
-        <a href="menu.pdf" class="btn btn-primary" target="_blank">
-            📄 Download Menu (PDF)
-        </a>
-    </div>
-
-    <!-- TIMING -->
-    <div class="card">
-        <h2>वेळ / Timings</h2>
-        <ul class="timing-list">
-            <li>🕒 सकाळी 6:00 ते रात्री 10:00</li>
-            <li>📅 आठवड्याचे सर्व दिवस (Open All Days)</li>
-        </ul>
-    </div>
-
-    <!-- ADDRESS + MAP -->
-    <div class="card">
-        <h2>पत्ता / Address</h2>
-
-        <p>
-            गावडाई देवी वस्ती, पेट्री, पारस हॉटेल शेजारी, कास पठार, सातारा  
-            <br><b>Plus Code:</b> PV6J+F8W, Jotibachiwadi, Maharashtra
-        </p>
-
-        <p>
-            <b>English:</b><br>
-            Gavadayi Devi Vasti, Petri, beside Paras Hotel, Kaas Plateau, Satara.  
-            <br><b>Plus Code:</b> PV6J+F8W, Jotibachiwadi, Maharashtra
-        </p>
-
-        <a href="https://maps.app.goo.gl/e1yrme28JUxkJhXF9"
-           target="_blank"
-           class="btn btn-whats">
-            📍 Get Directions
-        </a>
-    </div>
-    <!-- CONTACT / ENQUIRY FORM -->
-    <div class="card">
-        <h2>संपर्क / Enquiry</h2>
-        <p>ग्रुप ऑर्डर, फॅमिली जेवण किंवा खास कार्यक्रमासाठी खालील फॉर्म भरून WhatsApp वर मेसेज पाठवा.</p>
-
-        <form id="contactForm" onsubmit="sendWhatsApp(event)">
-            <div class="form-group">
-                <label for="name">नाव / Name</label>
-                <input type="text" id="name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="mobile">मोबाईल नंबर / Mobile</label>
-                <input type="tel" id="mobile" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">मेसेज / Message</label>
-                <textarea id="message" placeholder="उदा. 10 जणांसाठी संध्याकाळी 7 वाजता चिकन थाळी ऑर्डर..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-whats">
-                🟢 WhatsApp वर मेसेज पाठवा
-            </button>
-        </form>
-    </div>
-
-    <!-- SOCIAL + FOOTER -->
-    <div class="card">
-        <h2>सोशल मीडिया / Social Media</h2>
-        <p>लवकरच आमचे Instagram आणि Facebook पेजेस सुरू होणार आहेत.</p>
-        <div class="social">
-            <a href="#" title="Instagram">I</a>
-            <a href="#" title="Facebook">f</a>
-            <a href="#" title="YouTube">▶</a>
-        </div>
-    </div>
-
-    <div class="footer">
-        © 2025 शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर – कास पठार, सातारा.
-    </div>
-
-</main>
-
-<!-- WhatsApp Floating Button -->
-<a class="whatsapp-btn"
-   href="https://wa.me/918652062837?text=Hello%20Sharada%20Amrutulya!%20I%20want%20to%20order."
-   target="_blank">
-   🟢 Order on WhatsApp
-</a>
-
-<!-- WhatsApp Form Script -->
-<script>
-    function sendWhatsApp(event) {
-        event.preventDefault();
-
-        var name = document.getElementById('name').value.trim();
-        var mobile = document.getElementById('mobile').value.trim();
-        var msg = document.getElementById('message').value.trim();
-
-        var fullMsg =
-            "नाव: " + name + "%0A" +
-            "मोबाईल: " + mobile + "%0A" +
-            "मेसेज: " + msg + "%0A%0A" +
-            "Sent from Website - Sharada Amrutulya";
-
-        var url = "https://wa.me/918652062837?text=" + fullMsg;
-        window.open(url, "_blank");
-    }
-</script>
-
-</body>
-</html>
-
+<main>
