@@ -4,172 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
   <title>शारदा अमृततुल्य चहा | Kaas Pathar, Satara</title>
   <meta name="description" content="कास पठार, सातारा येथे शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर. गावठी चहा, नाश्ता, स्नॅक्स व घरगुती चव." />
   <meta name="keywords" content="शारदा अमृततुल्य, चहा, Kaas Pathar, Satara tea stall, gavthi chai" />
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: 'Noto Sans Devanagari', sans-serif;
       background: #f5f7fa;
       color: #2c2c2c;
-      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.jpg.png') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('banner.png') center/cover no-repeat;
       height: 320px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: #fff;
-      padding: 20px;
     }
 
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-    }
-
-    section {
-      padding: 30px 15px;
-      max-width: 1100px;
-      margin: auto;
-    }
+    section { max-width: 1100px; margin: auto; padding: 30px 15px; }
 
     .card {
       background: #fff;
-      border-radius: 14px;
       padding: 20px;
+      border-radius: 14px;
       margin-bottom: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
     }
 
-    h2 {
-      color: #6a1b9a;
-      margin-bottom: 15px;
-    }
+    h2 { color: #6a1b9a; }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    .buttons {
-      display: flex;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
     }
 
     .btn {
-      text-decoration: none;
       padding: 12px 20px;
       border-radius: 30px;
-      font-weight: bold;
       color: #fff;
+      text-decoration: none;
+      font-weight: bold;
       display: inline-block;
+      margin-right: 10px;
     }
 
-    .btn-whatsapp {
-      background: #25d366;
-    }
-
-    .btn-map {
-      background: #e53935;
-    }
+    .whatsapp { background: #25d366; }
+    .map { background: #e53935; }
 
     footer {
       background: #2c2c2c;
       color: #fff;
       text-align: center;
       padding: 15px;
-      font-size: 0.9rem;
-    }
-
-    /* Mobile Responsive */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div>
-      <h1>शारदा अमृततुल्य चहा</h1>
-      <p>कास पठार | सातारा</p>
+<header>
+  <div>
+    <h1>शारदा अमृततुल्य चहा</h1>
+    <p>कास पठार | सातारा</p>
+  </div>
+</header>
+
+<section>
+
+  <div class="card">
+    <h2>आमच्याबद्दल</h2>
+    <p>शुद्ध गावठी चहा, घरगुती चव आणि स्वच्छ वातावरण.</p>
+  </div>
+
+  <div class="card">
+    <h2>फोटो गॅलरी</h2>
+    <div class="gallery">
+      <img src="kaas1.jpg">
+      <img src="kaas2.jpg">
+      <img src="banner.png">
     </div>
-  </header>
+  </div>
 
-  <section>
-    <div class="card">
-      <h2>आमच्याबद्दल</h2>
-      <p>शारदा अमृततुल्य चहा आणि स्नॅक्स सेंटर येथे तुम्हाला शुद्ध गावठी चहा, घरगुती चव आणि स्वच्छ वातावरणाचा अनुभव मिळतो.</p>
-    </div>
+  <div class="card">
+    <h2>वेळ व ठिकाण</h2>
+    <p>🕕 सकाळी 6:00 ते रात्री 10:00</p>
+    <p>📍 गवडाई देवी वस्ती, पारस हॉटेलजवळ, कास पठार रोड, पेट्री, सातारा</p>
+    <p>📞 8652062837</p>
 
-    <div class="card">
-      <h2>मेनू</h2>
-      <ul>
-        <li>गावठी चहा / मसाला चहा / कटिंग चहा</li>
-        <li>वडापाव, भजी, पकोडे</li>
-        <li>पोहे, उपमा, मिसळपाव</li>
-        <li>अंडा भुर्जी, अंडा मॅगी</li>
-        <li>ऑर्डरवर जेवण (चिकन / मटण)</li>
-      </ul>
-    </div>
+    <a class="btn whatsapp" href="https://wa.me/918652062837">WhatsApp Order</a>
+    <a class="btn map" href="https://www.google.com/maps/search/Hotels/@17.711008,73.880439,21z">Google Map</a>
+  </div>
 
-    <div class="card">
-      <h2>फोटो गॅलरी</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;">
-        <img src="Kaas_Pathar,_Satara,_Maharashtra,_India_(2018)_2.jpg" alt="Kaas Pathar view" style="width:100%;border-radius:12px;">
-        <img src="Kaas-7016.jpg" alt="Kaas Pathar flowers" style="width:100%;border-radius:12px;">
-        <img src="banner.jpg.png" alt="Sharda Amrutulya banner" style="width:100%;border-radius:12px;">
-      </div>
-    </div>
+</section>
 
-    <div class="card">
-      <h2>वेळ व ठिकाण</h2>
-      <p>🕕 सकाळी 6:00 ते रात्री 10:00</p>
-      <p>📍 गवडाई देवी वस्ती, पारस हॉटेलजवळ, कास पठार रोड, पेट्री, सातारा</p>
-      <p>📞 संपर्क: <strong>8652062837</strong></p>
+<footer>
+  © 2025 शारदा अमृततुल्य चहा
+</footer>
 
-      <div class="buttons">
-        <a class="btn btn-whatsapp" href="https://wa.me/918652062837" target="_blank">WhatsApp Order</a>
-        <a class="btn btn-map" href="https://www.google.com/maps/search/Hotels/@17.711008,73.880439,21z/data=!5m1!1e1" target="_blank">Google Map</a>
-      </div>
-
-      <div style="margin-top:20px;">
-        <iframe src="https://www.google.com/maps?q=17.711008,73.880439&z=17&output=embed" width="100%" height="300" style="border:0;border-radius:12px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 शारदा अमृततुल्य चहा | Designed by Jitu More
-  </footer>
-
-  <!-- Sticky WhatsApp Button -->
-  <a href="https://wa.me/918652062837" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 8px 20px rgba(0,0,0,0.25);z-index:999;">WhatsApp</a>
+<a href="https://wa.me/918652062837"
+style="position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;">
+WhatsApp
+</a>
 
 </body>
 </html>
